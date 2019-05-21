@@ -18,7 +18,7 @@
     <properties>
         <grpc.version>1.7.0</grpc.version>
         <rejoiner.version>0.0.4</rejoiner.version>
-        <jetty.version>9.4.12.v20180830</jetty.version>
+        <jetty.version>9.4.17.v20190418</jetty.version>
     </properties>
 
     <dependencyManagement>
