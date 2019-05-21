@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.github.sanderploegsma.products";
+option java_outer_classname = "ProductsProto";
+
+package products;
+
+service Products {
+    rpc GetProducts(GetProductsRequest) returns (GetProductsResponse);
+    rpc GetProduct(GetProductRequest) returns (GetProductResponse);
+}
+
+message GetProductsRequest {
+
+}
+
+message GetProductsResponse {
+    repeated Product products = 1;
+}
+
+message GetProductRequest {
+    int64 id = 1;
+}
+
+message GetProductResponse {
+    Product product = 1;
+}
+
+message Product {
+    int64 id = 1;
+    string name = 2;
+}
